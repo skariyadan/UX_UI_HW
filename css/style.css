@@ -7,6 +7,7 @@ body
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-wrap: wrap;
 }
 
 /* Navigation */
@@ -78,7 +79,7 @@ li:hover
 .image img
 {
     height: 100%;
-    -webkit-filter: drop-shadow(10px 10px  #D93D3D) 
+    -webkit-filter: drop-shadow(10px 10px  #E71144) 
                     drop-shadow(-10px -10px 0 #E3D9C5);
 }
 
@@ -86,7 +87,7 @@ li:hover
 {
     position: absolute;
     z-index: 1;
-    height: 400px;
+    height: auto;
     background: #E3D9C5;
     top: 175px;
     right: 5%;
@@ -96,10 +97,12 @@ li:hover
     align-items: flex-end;
     flex-direction: column;
     border-radius: 20px;
-    padding-right: 10em;
+    padding-right: 5%;
     padding-top: 2em;
     padding-bottom: 2em;
+    padding-left: 5%;
     -webkit-filter: drop-shadow(10px 10px #1C5C46);
+    flex-wrap: wrap;
 }
 
 .personalInfo h1, h2
@@ -113,7 +116,7 @@ li:hover
 .personalInfo h1
 {
     font-size: 6em;
-    color: #D93D3D;
+    color: #E71144;
 }
 
 .personalInfo h2
@@ -141,17 +144,18 @@ li:hover
     outline: none;
     color: black;
     cursor: pointer;
-    position: relative;
-    z-index: 0;
-    top: 550px;
-    left: 40%;
+    position: absolute;
+    bottom: 20%;
+    z-index: 2;
+    right: 5rem;
     font-family: 'Roboto Slab', 'serif';
     margin: 2rem;
+    padding-top: 50px;
     padding: 1rem;
     font-size: 1.5rem;
     text-align: center;
     border-radius: 100px;
-    background: linear-gradient(45deg, #D93D3D,#F29544,#FFAE33, #E3D9C5,#FFAE33, #F29544, #D93D3D);
+    background: linear-gradient(45deg, #D93D3D,#E71144,#F29544,#FFAE33, #E3D9C5,#FFAE33, #F29544, #E71144, #D93D3D);
     background-size: 600%;
     animation: glowing 50s linear infinite;
     opacity: 1;
@@ -179,6 +183,7 @@ footer
     justify-content: center;
     align-items: center;
     padding-top: 4em;
+    flex-wrap: wrap;
 }
 
 footer .footerLogo
