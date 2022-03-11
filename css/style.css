@@ -7,7 +7,8 @@ body
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex-wrap: wrap;
+
+    overflow-x: hidden; 
 }
 
 /* Navigation */
@@ -63,7 +64,9 @@ li:hover
 .heroImg
 {
     height: 800px;
-    padding: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
     position: relative;
     text-align: center;
 }
@@ -89,7 +92,7 @@ li:hover
     z-index: 1;
     height: auto;
     background: #E3D9C5;
-    top: 175px;
+    top: 200px;
     right: 5%;
     left: 5%;
     display: flex;
@@ -108,14 +111,14 @@ li:hover
 .personalInfo h1, h2
 {
     font-family: 'Slackey', cursive;
-    margin: 10px;
+    margin: 5px;
     width: 60%;
     text-align: center;
 }
 
 .personalInfo h1
 {
-    font-size: 6em;
+    font-size: 5em;
     color: #E71144;
 }
 
@@ -129,12 +132,16 @@ li:hover
 {
     font-size: 2.5em;
     font-family: 'Roboto Slab', 'serif';
-    margin: 10px;
+    margin: 5px;
     width: 60%;
     text-align: center;
 }
 
-
+.resume
+{
+    padding-bottom: 10em;
+    padding-top: 0em;
+}
 
 .resume button
 {
@@ -145,7 +152,6 @@ li:hover
     color: black;
     cursor: pointer;
     position: absolute;
-    bottom: 20%;
     z-index: 2;
     right: 5rem;
     font-family: 'Roboto Slab', 'serif';
