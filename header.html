@@ -4,24 +4,60 @@
         <title>Portfolio Header</title>
         <link rel="icon" href="images/logo.png">
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Slackey&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
     </head>
 
     <body>
+
         <header class="navigation">
+
             <div class="logo">
                 <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>   
             </div>
-            <nav>
-                <ul>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+
+            <div class="menu">
+                <nav class="horizontal">
+                    <ul>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="dropdown">
+                    <button class="accordion" id="menu" onclick='toggle("dropdownNav")' >
+                        <i class = "material-icons">menu</i>
+                    </button>
+                    <div class="dropdown-content" id="dropdownNav">
+                        <a href="work.html">Work</a>
+                        <a href="skills.html">Skills</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div> 
+            </div>  
+
         </header>
+
     </body>
+    <script language="javascript" type="text/javascript">
+        function toggle(divID) {
+            var x = document.getElementById(divID);
+            var y = document.getElementById("menu");
+            if (window.getComputedStyle(x).display === "none") {
+                x.style.display = "block"; 
+                y.style.backgroundColor = "#E3D9C5";
+            } 
+            else {
+                x.style.display = "none";
+                y.style.backgroundColor = "transparent";
+            }
+      }
+    </script>
+
 </html>
