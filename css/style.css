@@ -56,7 +56,7 @@ body
     align-items: center;
     height: 100px;
     top:0;
-    z-index: 3;
+    z-index: 10;
     padding-bottom: 5em;
 }
 
@@ -115,6 +115,7 @@ li a:hover
       color: var(--black);
       border: none;
       border-radius: 10px 10px 0px 0px;
+      z-index: 15;
   }
 
   .dropdown button i
@@ -134,7 +135,7 @@ li a:hover
     min-height: calc(100vh - 100px);
     box-shadow: 0px 8px 16px 0px #231F2020;
     border-radius: 20px 0px 20px 20px;
-    z-index: 3;
+    z-index: 16;
     text-align: center;
     left: 100%; 
     transform: translateX(-100%);
@@ -516,7 +517,7 @@ li a:hover
     .content .heroSpace .personalInfo .resume
     {
         height: 10vw;
-        margin-top: 0vw;
+        margin-top: .25vh;
         padding: 0;
     }
 
