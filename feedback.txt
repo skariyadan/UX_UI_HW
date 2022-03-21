@@ -1,0 +1,8 @@
+Feedback Insights
+
+- background too dark
+- make menu responsive
+- footer could be bigger
+- be conscious of spacing 
+- be mindful of screen widths (mine is a lot wider than most screens)
+
